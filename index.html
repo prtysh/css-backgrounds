@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - CSS / SVG Blobby Background</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+	<!-- Cassie Evans -->
+	<!-- https://codepen.io/cassie-codes/pen/zWJxXj -->
+<!-- partial:index.partial.html -->
+<div class="bgImage"></div>
+<svg class="blobCont">
+		<image xlink:href="background.jpg" mask="url(#mask)" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
+      <defs>
+      <filter id="gooey" height="130%">
+				<feGaussianBlur in="SourceGraphic" stdDeviation="25" result="blur" />
+				<feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -10" result="goo" />
+    	</filter>
+    </defs>
+			<mask id="mask" x="0" y="0">
+				<g style="filter: url(#gooey)">
+          <circle class="blob" cx="10%" cy="10%" r="80" fill="white" stroke="white"/>
+					<circle class="blob" cx="50%" cy="20%" r="20" fill="white" stroke="white"/>
+					<circle class="blob" cx="37%" cy="25%" r="30" fill="white" stroke="white"/>
+					<circle class="blob" cx="90%" cy="20%" r="70" fill="white" stroke="white"/>
+					<circle class="blob" cx="30%" cy="25%" r="90" fill="white" stroke="white"/>
+          <circle class="blob" cx="50%" cy="60%" r="80" fill="white" stroke="white"/>
+					<circle class="blob" cx="70%" cy="90%" r="33" fill="white" stroke="white"/>
+					<circle class="blob" cx="90%" cy="80%" r="66" fill="white" stroke="white"/>
+					<circle class="blob" cx="30%" cy="90%" r="99" fill="white" stroke="white"/>
+          <circle class="blob" cx="10%" cy="10%" r="80" fill="white" stroke="white"/>
+					<circle class="blob" cx="50%" cy="10%" r="50" fill="white" stroke="white"/>
+					<circle class="blob" cx="17%" cy="15%" r="30" fill="white" stroke="white"/>
+					<circle class="blob" cx="70%" cy="75%" r="140" fill="white" stroke="white"/>
+					<circle class="blob" cx="30%" cy="25%" r="30" fill="white" stroke="white"/>
+          <circle class="blob" cx="80%" cy="60%" r="80" fill="white" stroke="white"/>
+					<circle class="blob" cx="20%" cy="22%" r="30" fill="white" stroke="white"/>
+					<circle class="blob" cx="14%" cy="44%" r="90" fill="white" stroke="white"/>
+					<circle class="blob" cx="10%" cy="30%" r="60" fill="white" stroke="white"/>
+				</g>
+			</mask>
+	</svg>
+<!-- partial -->
+  
+</body>
+</html>
