@@ -1,5 +1,5 @@
-body,
 .bgImage {
+  z-index: -1;
   margin: 0;
   height: 100%;
   width: 100%;
@@ -10,15 +10,17 @@ body,
   position: absolute;
   /* background-image: url(https://www.sciencemag.org/sites/default/files/styles/article_main_large/public/SDSS_1280p.jpg?itok=MKpRj3Cu); */
   background-color: black;
+  /* background: linear-gradient(to right, red, green, blue); */
   background-size: cover;
   background-position: top;
   -webkit-filter: grayscale(70%);
   /* Safari 6.0 - 9.0 */
-  filter: grayscale(70%);
+  filter: grayscale(90%);
   z-index: -1;
 }
 
 .blobCont {
+  z-index: -1;
   position: absolute;
   width: 100vw;
   height: 100vh;

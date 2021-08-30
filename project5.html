@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Credit to Cassie Evans -->
+    <!-- https://codepen.io/cassie-codes/pen/zWJxXj -->
+    <title>CSS BACKGROUND 1</title>
+    <link rel="stylesheet" href="./styles/bulma.min.css">
+    <link rel="stylesheet" href="./styles/global-style.css">
+    <link rel="stylesheet" href="./styles/blob-style.css">
+    <link rel="stylesheet" href="./styles/text.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@100;200;400&family=Nunito+Sans:wght@200&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="bgImage"></div>
+    <svg class="blobCont">
+        <image xlink:href="background.jpg" mask="url(#mask)" width="100%" height="100%"
+            preserveAspectRatio="xMidYMid slice" />
+        <defs>
+            <filter id="gooey" height="130%">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="25" result="blur" />
+                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -10"
+                    result="goo" />
+            </filter>
+        </defs>
+        <mask id="mask" x="0" y="0">
+            <g style="filter: url(#gooey)">
+                <circle class="blob" cx="10%" cy="10%" r="80" fill="white" stroke="white" />
+                <circle class="blob" cx="50%" cy="20%" r="20" fill="white" stroke="white" />
+                <circle class="blob" cx="37%" cy="25%" r="30" fill="white" stroke="white" />
+                <circle class="blob" cx="90%" cy="20%" r="70" fill="white" stroke="white" />
+                <circle class="blob" cx="30%" cy="25%" r="90" fill="white" stroke="white" />
+                <circle class="blob" cx="50%" cy="60%" r="80" fill="white" stroke="white" />
+                <circle class="blob" cx="70%" cy="90%" r="33" fill="white" stroke="white" />
+                <circle class="blob" cx="90%" cy="80%" r="66" fill="white" stroke="white" />
+                <circle class="blob" cx="30%" cy="90%" r="99" fill="white" stroke="white" />
+                <circle class="blob" cx="10%" cy="10%" r="80" fill="white" stroke="white" />
+                <circle class="blob" cx="50%" cy="10%" r="50" fill="white" stroke="white" />
+                <circle class="blob" cx="17%" cy="15%" r="30" fill="white" stroke="white" />
+                <circle class="blob" cx="70%" cy="75%" r="140" fill="white" stroke="white" />
+                <circle class="blob" cx="30%" cy="25%" r="30" fill="white" stroke="white" />
+                <circle class="blob" cx="80%" cy="60%" r="80" fill="white" stroke="white" />
+                <circle class="blob" cx="20%" cy="22%" r="30" fill="white" stroke="white" />
+                <circle class="blob" cx="14%" cy="44%" r="90" fill="white" stroke="white" />
+                <circle class="blob" cx="10%" cy="30%" r="60" fill="white" stroke="white" />
+            </g>
+        </mask>
+    </svg>
+    <!-- partial -->
+    <section>
+        <div class="container">
+            <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+                <div class="navbar-brand">
+                    <a class="navbar-item" href="/">
+                        <img src="assets/wbh-logo.png">
+                    </a>
+
+                    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
+                </div>
+
+                <div id="navbarBasicExample" class="navbar-menu">
+                    <div class="navbar-start">
+                        <a class="navbar-item" href="/">
+                            Home
+                        </a>
+                        <a class="navbar-item" href="/about.html">
+                            About
+                        </a>
+                        <a class="navbar-item" href="/timeline.html">
+                            Timeline
+                        </a>
+                        <div class="navbar-item has-dropdown is-hoverable">
+                            <a class="navbar-link">
+                                Projects
+                            </a>
+
+                            <div class="navbar-dropdown">
+                                <a class="navbar-item" href="project1.html">
+                                    Project 1
+                                </a>
+                                <a class="navbar-item" href="project2.html">
+                                    Project 2
+                                </a>
+                                <a class="navbar-item" href="project3.html">
+                                    Project 3
+                                </a>
+                                <a class="navbar-item" href="project4.html">
+                                    Project 4
+                                </a>
+                                <a class="navbar-item" href="project5.html">
+                                    Project 5
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="text-content">
+                <p><em>MERREZ BAL</em></p>
+                <p>Merrez Bal is a Visual artist and poet based in Leeds. Recently Graduated From Leeds Arts University where he studied his BA in Fine Art.&nbsp;</p>
+                <p>&nbsp;working across multi media mediums such as Film, Photography and Printmaking. His work is driven by problems he has seen in society and more so in his community. Past Works have been made in response to social issues that affect
+                    everyday people be them local or worldwide addressing race, gender and sexuality.</p>
+                <p>Bals Current work is more around himself ,being a mixed race male Merrez is trying to give his viewer a glimpse into his world and his struggles with racism and prejudices that have effected him, closure or expansion for himself and some
+                    sort of social change through these themes.</p>
+                <p><em>JOJIN VAN WINKLE</em></p>
+                <p>Jojin Van Winkle&rsquo;s film, video, photography and audio research centers around the practice of listening, focused on resilience, environmental stewardship and human rights. She has participated in artist residencies nationally and
+                    internationally, and exhibited large-scale installation art. As an assistant professor of art at Carthage College (USA), she teaches and directs the Photography and Film and New Media Program.&nbsp;</p>
+                <p>Van Winkle&rsquo;s work will be the subject of a solo exhibition at MMoCA (Madison Museum of Contemporary Art) opening October 2020. In 2016-17 Van Winkle was an artist-in-resident at the Madison Children's Museum, collaborating with 500
+                    children on a multi-media permanent installation. For the Liberian land rights documentary, The Land Beneath Our Feet (2016, 60 min.), she was an associate producer, with additional camerawork. She was the USA-based cinematographer
+                    for PBS/Independent Lens documentary, In the Shadow of Ebola, (2015, 27 min.). Both documentaries screened at international and national festivals, winning awards.&nbsp;</p>
+                <p><em>TAL GARMIZA</em></p>
+                <p>Tal Garmiza is an Israeli dancer and poet, creating and exploring art and people through movement, words and video. She has been dancing since she was 4 years old and writing poems since she was 9 years old.</p>
+                <p>Her solo piece called 'A Voyage to the Human Soul' is currently presenting in different art galleries, exhibitions and dance fringe nights in Israel and in Europe. This piece was formed both in Israel and in residencies in Holland and
+                    the UK.</p>
+                <p>Tal took part in different festivals in Suzanne Dellal Dance centre in Tel Aviv and Fringe theatres performing dance pieces collaborating with musicians.</p>
+                <p>She is now working on a dance piece for three dancers called 'The Three Graces'. She is also working on a pilot channel on social media called 'Tal's Poetry', presenting poems that are being read out loud in English &amp; Hebrew. She will
+                    be starting to work on her second poetry book next year.</p>
+                <p>Tal believes that art is a necessity of the human experience, it exists in all of us and a good artist knows how to find it and help others tap into it through his\her creations.</p>
+                <p><em>Residency:</em></p>
+                <p>We have developed a good rapport with each other throughout Zoom meetings, thorough emails and conversations to talk about ideas. We are flexible with each other and we all have things going on in our daily lives. Our scheduled chats have
+                    become routined and rhythmic - life seems strange after a few days without one of these check-ins with each other.</p>
+                <p>We worked equally throughout. We all shared the load and did a bit of everything -no discipline dominated. Our workflow encompassed all that each of us had available in our homes. We had different cameras, audio recording devices and editing
+                    software.&nbsp;</p>
+                <p>A natural organic language emerged in the way that we worked. We had a call and response of creating and then watching each other's work and then making something similar and something different. A pattern is seen and continued throughout
+                    all of our work - a beautiful motif made by us. We combined written poems, stream of consciousness reflections and movements with objects and within spaces.</p>
+                <p>We used what is around us without discriminatiion if it is &ldquo;fine art&rdquo; or white cube space. We found stories in everything.</p>
+                <p><em>Concept:&nbsp;</em></p>
+                <p>For our collaboration we are exploring the shared experience of being in home spaces and yet we wanted to cross the invisible of space and time borders which separate us. We live an ocean apart from one another, in three different countries
+                    on three different continents, in three different time zones. We each have distinct main disciplines either, dance, spoken word or video/film. We discovered early on that we share a love for poetry and writing.</p>
+                <p>The hallway videos, centered around the phrase &lsquo;This is my&hellip;&rsquo; was the beginning of our shared language. This piece relates to owning objects and memories. Through movement we interacted with the halls of our home spaces.</p>
+                <p>When we are inward bound within our own four walls how can your imagination contribute to a creative process. How much can you learn about yourself with your own everyday items?</p>
+                <p>Centered in our homes, we are surrounded by all that is there. Things we own, things that aren&rsquo;t ours, things that belong to our past and things that belong to our present.</p>
+                <p>Being in close proximity to objects forced us to look at them and confront them. We felt that paying attention to small things that we might normally pass by allowed us to examine our shared experiences before and during this global Lockdown.</p>
+                <p>We were asking ourselves, how much is real in what have we created and how much is performed for the project?
+                </p>
+                <p>We were using items and objects which we use all the time, but we have &lsquo;forced&rsquo; our house to become a performative space and things like olive oil to become a performer. It allowed us to explore new forms of creativity and
+                    helped us to find a creative process in less than ideal circumstances.&nbsp;
+                </p>
+                <p><em>Artwork:</em></p>
+                <p><a href="https://drive.google.com/drive/folders/1ZCVLy1OqxBJP-wYVjTjnzRaMfqY0IVdA?usp=sharing">https://drive.google.com/drive/folders/1ZCVLy1OqxBJP-wYVjTjnzRaMfqY0IVdA?usp=sharing</a>
+                </p>
+                <p>Mock up of how artwork is to be presented:</p>
+                <p><a href="https://drive.google.com/drive/folders/1ru6eznn22OEakPbA-n5wZWfodJkVM3vH?usp=sharing">https://drive.google.com/drive/folders/1ru6eznn22OEakPbA-n5wZWfodJkVM3vH?usp=sharing</a>
+                </p>
+                <p>Youtube links:</p>
+                <p>Boxes: <a href="https://youtu.be/UzxsvNg0--A">https://youtu.be/UzxsvNg0--A</a></p>
+                <p>Living Room: <a href="https://youtu.be/2Y5xXprR4FM">https://youtu.be/2Y5xXprR4FM</a></p>
+                <p>Us: <a href="https://youtu.be/ZKURU5_hJpI">https://youtu.be/ZKURU5_hJpI</a></p>
+                <p>Vistas: <a href="https://youtu.be/XRlW6s885Yw">https://youtu.be/XRlW6s885Yw</a></p>
+                <p>Windows: <a href="https://youtu.be/44CVYz9vKv0">https://youtu.be/44CVYz9vKv0</a></p>
+                <p>(INSIDE CLOSET)&nbsp;</p>
+                <p>Closet Doors: <a href="https://youtu.be/FO53Vmy45O4">https://youtu.be/FO53Vmy45O4</a></p>
+                <p>Grammys Fur Coat: <a href="https://youtu.be/S1N-jW75t5g">https://youtu.be/S1N-jW75t5g</a></p>
+                <p>Saftas Disco Jacket: <a href="https://youtu.be/jZuNhPgfC-4">https://youtu.be/jZuNhPgfC-4</a></p>
+                <p>(INSIDE HALLWAY)</p>
+                <p>Merrez&rsquo;s Hallway: <a href="https://youtu.be/0IYGuyr7Kdw">https://youtu.be/0IYGuyr7Kdw</a></p>
+                <p>This Is My Space This Is Me: <a href="https://youtu.be/keuZmW3H5lI">https://youtu.be/keuZmW3H5lI</a>
+                </p>
+                <p>Jojin&rsquo;s Hallway: <a href="https://youtu.be/C3svGQMHp9o">https://youtu.be/C3svGQMHp9o</a></p>
+                <p>(INSIDE KITCHEN)</p>
+                <p>Homemade: <a href="https://youtu.be/gKsnlmZgSKs">https://youtu.be/gKsnlmZgSKs</a></p>
+                <p>Where Are You From: <a href="https://youtu.be/TOOF6jYsCb0">https://youtu.be/TOOF6jYsCb0</a></p>
+            </div>
+
+        </div>
+    </section>
+</body>
+
+</html>

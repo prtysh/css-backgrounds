@@ -1,0 +1,33 @@
+.gif-class {
+    width: 20rem;
+    height: 20rem;
+    background-color: aliceblue;
+    border-radius: 1rem;
+    margin: 10px;
+    background-repeat: no-repeat;
+    background-size: 20rem 20rem;
+}
+
+#gif-1 {
+    background-image: url("../assets/gifs-static/sun.png");
+}
+
+#gif-2 {
+    background-image: url("../assets/gifs-static/touch.png");
+}
+
+#gif-3 {
+    background-image: url("../assets/gifs-static/water.png");
+}
+
+#gif-1:hover {
+    background-image: url("../assets/gifs-animated/sun.gif");
+}
+
+#gif-2:hover {
+    background-image: url("../assets/gifs-animated/touch.gif");
+}
+
+#gif-3:hover {
+    background-image: url("../assets/gifs-animated/water.gif");
+}

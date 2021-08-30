@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Credit to Cassie Evans -->
+    <!-- https://codepen.io/cassie-codes/pen/zWJxXj -->
+    <title>CSS BACKGROUND 1</title>
+    <link rel="stylesheet" href="./styles/bulma.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="./styles/global-style.css">
+    <link rel="stylesheet" href="./styles/blob-style.css">
+    <link rel="stylesheet" href="./styles/text.css">
+    <link rel="stylesheet" href="./styles/artwork-1.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@100;200;400&family=Nunito+Sans:wght@200&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="bgImage"></div>
+    <svg class="blobCont">
+        <image xlink:href="background.jpg" mask="url(#mask)" width="100%" height="100%"
+            preserveAspectRatio="xMidYMid slice" />
+        <defs>
+            <filter id="gooey" height="130%">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="25" result="blur" />
+                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -10"
+                    result="goo" />
+            </filter>
+        </defs>
+        <mask id="mask" x="0" y="0">
+            <g style="filter: url(#gooey)">
+                <circle class="blob" cx="10%" cy="10%" r="80" fill="white" stroke="white" />
+                <circle class="blob" cx="50%" cy="20%" r="20" fill="white" stroke="white" />
+                <circle class="blob" cx="37%" cy="25%" r="30" fill="white" stroke="white" />
+                <circle class="blob" cx="90%" cy="20%" r="70" fill="white" stroke="white" />
+                <circle class="blob" cx="30%" cy="25%" r="90" fill="white" stroke="white" />
+                <circle class="blob" cx="50%" cy="60%" r="80" fill="white" stroke="white" />
+                <circle class="blob" cx="70%" cy="90%" r="33" fill="white" stroke="white" />
+                <circle class="blob" cx="90%" cy="80%" r="66" fill="white" stroke="white" />
+                <circle class="blob" cx="30%" cy="90%" r="99" fill="white" stroke="white" />
+                <circle class="blob" cx="10%" cy="10%" r="80" fill="white" stroke="white" />
+                <circle class="blob" cx="50%" cy="10%" r="50" fill="white" stroke="white" />
+                <circle class="blob" cx="17%" cy="15%" r="30" fill="white" stroke="white" />
+                <circle class="blob" cx="70%" cy="75%" r="140" fill="white" stroke="white" />
+                <circle class="blob" cx="30%" cy="25%" r="30" fill="white" stroke="white" />
+                <circle class="blob" cx="80%" cy="60%" r="80" fill="white" stroke="white" />
+                <circle class="blob" cx="20%" cy="22%" r="30" fill="white" stroke="white" />
+                <circle class="blob" cx="14%" cy="44%" r="90" fill="white" stroke="white" />
+                <circle class="blob" cx="10%" cy="30%" r="60" fill="white" stroke="white" />
+            </g>
+        </mask>
+    </svg>
+
+    <!-- partial -->
+    <section>
+        <div class="container">
+            <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+                <div class="navbar-brand">
+                    <a class="navbar-item" href="/">
+                        <img src="assets/wbh-logo.png">
+                    </a>
+
+                    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
+                </div>
+
+                <div id="navbarBasicExample" class="navbar-menu">
+                    <div class="navbar-start">
+                        <a class="navbar-item" href="/">
+                            Home
+                        </a>
+                        <a class="navbar-item" href="/about.html">
+                            About
+                        </a>
+                        <a class="navbar-item" href="/timeline.html">
+                            Timeline
+                        </a>
+                        <div class="navbar-item has-dropdown is-hoverable">
+                            <a class="navbar-link">
+                                Projects
+                            </a>
+
+                            <div class="navbar-dropdown">
+                                <a class="navbar-item" href="project1.html">
+                                    Project 1
+                                </a>
+                                <a class="navbar-item" href="project2.html">
+                                    Project 2
+                                </a>
+                                <a class="navbar-item" href="project3.html">
+                                    Project 3
+                                </a>
+                                <a class="navbar-item" href="project4.html">
+                                    Project 4
+                                </a>
+                                <a class="navbar-item" href="project5.html">
+                                    Project 5
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="text-content">
+                <div id="carousel-videos" class="carousel">
+                    <div class="item-1">
+                        <div style="margin: auto; padding: 10px;text-align: center;">
+                            <iframe width="100%" height="400" src="https://www.youtube.com/embed/pWR-ga9U2DM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <div style="margin: auto; text-align: center;">
+                                <h1> Sun </h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-2">
+                        <div style="margin: auto; padding: 10px;text-align: center;">
+                            <iframe width="100%" height="400" src="https://www.youtube.com/embed/gGgAb8kXH64" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <div style="margin: auto; text-align: center;">
+                                <h1> Touch </h1>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="item-3">
+                        <div style="margin: auto; padding: 10px;text-align: center;">
+                            <iframe width="100%" height="400" src="https://www.youtube.com/embed/UNPedp9UJr4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <div style="margin: auto; text-align: center;">
+                                <h1> Water </h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p><em>Concept</em></p>
+                <p><em>Gaia</em> is an artwork about the relations between inside and outside, private and public, movement and stillness, limitation and freedom, resistance and acceptance, human and nature. It is an expression of nature trying to find a
+                    way to speak when it is muted by climate change and pollution. We created a mutual metaphor between human and nature elements to highlight their similarities and the struggles they share. By observing nature itself in its apparent
+                    stillness and harmony, we noticed that the soul of a woman dissolves with what we imagine the soul of nature to be: powerful, beautiful, majestic, delicate, motherly, wild. To emphasize that, we gave nature a body on the visual and
+                    a voice on the audible level.</p>
+                <p>We translated our current lack of human touch not only into dance but also in a visual touch, made tangible by a material that is heat-reactive. By coating a glass surface with thermochromic paint, we can change its opacity through temperature.
+                    We chose the window as a stage because it is a space for interaction of human touch and the natural elements of water and sun, reconnecting to our idea of reaching to the outside. It was important to us to create a space in between
+                    by staging performative elements throughout inside and outside, both connected and separated through a glass surface. Through connecting dance and poetry, we imitate a natural rhythm that seems as much arbitrary as balanced, creating
+                    a contrast between stillness and action.</p>
+                <p>We believe that our lives should be in harmony with our environment and that it is time to make space for nature to speak itself. Our staging of that is as much subjective and personal as it is relatable. Our aim is to take viewers on
+                    a journey of exploring our vision on the relations discussed in-depth.</p>
+
+
+                <p><em>Bios:</em></p>
+                <div style="display: grid; grid-template-columns: 1fr 1fr;">
+                    <div>
+                        <p><em>ADELE GABBANELLI</em></p>
+                        <p>Adele Gabbanelli is an Italian contemporary dancer based in France. Having graduated from Dancehaus, Susanna Beltrami professional training program in Milan, then continuing through with Dance formation, Kibbutz Contemporary Dance
+                            Company, Dance Journey program in Gaaton, Israel. Adele&rsquo;s shown support for significant movements, such as dancing against gender-based violence for the #ISEEYOU event, in addition to being a passionate environmentalist
+                            and continued supporter of The Extinction Rebellion movement.</p>
+                        <p>Adele&rsquo;s manifestation of her inner world is primarily focused through the expressive gestures of dance, but her exploration can lead her towards different mediums such as drawing and writing. Ideally, being able to reach
+                            artistic creation through interdisciplinarity involvement. Adele&rsquo;s always been fascinated by movement and non-verbal communication, with the purpose of investigating emotions and human tendencies through art forms.&nbsp;</p>
+                        <a href="https://www.instagram.com/adelegabbanelli/">Adele&rsquo;s Instagram</a>
+                    </div>
+                    <div>
+                        <p><em>ALICIA KREMSER</em></p>
+                        <p>Alicia Kremser is a multi-disciplinary artist from Germany and a recent graduate from the Bauhaus-University Weimar with a Bachelor of Fine Arts in Media Art and Design. Alicia&rsquo;s artistic purpose focuses on a delicate way
+                            of non-narrative storytelling through a diverse range of media, including performative and experimental video art and audio-visual installations. Using tools like poetry and costume design allow her to reach a deeper level
+                            within the atmospheres she creates. Her visions of a utopic space between the sky and the sea emerge from her inspiration of water as a carrier for tangibility and depth.</p>
+                        <p>Links:</p>
+                        <p><a href="http://www.aliciakremser.de/en">Website</a>, <a href="https://www.instagram.com/lici207">Alicia&rsquo;s Instagram</a></p>
+
+                    </div>
+                </div>
+                <p><em>Residency</em></p>
+
+                <div style="display:flex; ">
+                    <div class="gif-class" id="gif-1">
+
+                    </div>
+                    <div class="gif-class" id="gif-2">
+
+                    </div>
+                    <div class="gif-class" id="gif-3">
+                        <!-- <img src="assets/gifs-animated/sun.gif" alt=""> -->
+                    </div>
+
+                </div>
+                <p>Performativity and movement play an important role in both of our practices, approached in very different ways. Two opposing artists, one wanting to represent movement and the other resistance to movement through stillness. We felt an
+                    urgency to address our current feelings of introspection in the lockdown. It reminded us that we are part of an ecosystem and that nature itself is going through a similar phase of introspection. We developed a strong need to spread
+                    awareness about the climate crisis to propose a changing in human behavior, which is the starting point for sustainable development. The lockdown phase enlightened the clear difference between the rhythm of humans in its frenetic quality
+                    and the rhythm of nature, more quiet and organic. This felt as a paradox being humans a part of nature itself.</p>
+                <p>Where is home and what does it mean? How does being held back lead us to reconnecting with nature and the organic essence of life? During this research, we struggled to make our individual ways of expression into one extensive artwork.
+                    The guidance of the residency helped us to focus on the essence of our ideas by sharing our individual working processes with each other. In addition, the opportunity to exchange inspirations with different artists from all over the
+                    world, helped us to put our process into perspective. Finally we created a collaborative work that we both feel fundamentally involved in while valuing the individual and essential quality that the other one brings to it.</p>
+                <p><br /><br /></p>
+            </div>
+
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
+    <script>
+        bulmaCarousel.attach('#carousel-videos', {
+            slidesToScroll: 1,
+            slidesToShow: 1,
+            loop: true
+        });
+    </script>
+</body>
+
+</html>

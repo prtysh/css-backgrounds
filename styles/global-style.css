@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  /* height: 100%; */
+  width: 100%;
+  overflow: hidden;
+  /* font-family: "Rubik", sans-serif; */
+  font-family: "Exo", sans-serif;
+  /* font-family: "Nunito Sans", sans-serif; */
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+section {
+  z-index: 10;
+  height: 100vh;
+  width: 70%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  max-width: 980px;
+  margin: auto;
+}
+
+svg {
+  z-index: -1;
+}
+
+section > div {
+  padding: 0 1em;
+}
+
+h1 {
+  font-family: "Rubik", sans-serif;
+  font-size: 2em;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #444444;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #660000;
+}
+
+nav {
+  padding: 0 0 1em 0;
+}
+.container {
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+p {
+  margin: 1em 0px;
+}
+
+h2 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.navbar {
+  background-color: black;
+  color: beige;
+}
+
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: blueviolet;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+
